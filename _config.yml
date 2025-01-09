@@ -1,0 +1,21 @@
+title: "Моё портфолио"
+description: "Важность портфолио для программиста и мой опыт."
+baseurl: "" # Убедитесь, что пусто для GitHub Pages
+url: "https://ВАШЕ_ИМЯ.github.io" # Укажите ваш GitHub Pages URL
+theme: minimal-mistakes-jekyll
+
+# Навигация (добавим ссылки на страницы)
+nav:
+  - title: "Главная"
+    url: /
+  - title: "Обо мне"
+    url: /about/
+  - title: "Портфолио"
+    url: /portfolio/
+
+# Социальные ссылки (опционально)
+author:
+  name: "Рамаз"
+  email: "safinramaz@mail.ru"
+  social:
+    github: "https://github.com/RamazSafin"
