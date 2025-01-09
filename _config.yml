@@ -1,9 +1,10 @@
 title: "Моё портфолио"
 description: "Важность портфолио для программиста и мой опыт."
-baseurl: "" # Убедитесь, что пусто для GitHub Pages
-url: "https://ramazsafin.github.io/" # Укажите ваш GitHub Pages URL
+baseurl: ""  # For GitHub Pages, this should remain empty unless you're using a custom domain
+url: "https://ramazsafin.github.io/"  # Your GitHub Pages URL
+theme:
 
-# Навигация (добавим ссылки на страницы)
+# Navigation links
 nav:
   - title: "Главная"
     url: /
@@ -12,9 +13,9 @@ nav:
   - title: "Портфолио"
     url: /portfolio/
 
-# Социальные ссылки (опционально)
+# Author details and social links
 author:
   name: "Рамаз"
   email: "safinramaz@mail.ru"
   social:
-    github: "https://github.com/RamazSafin" 
+    github: "https://github.com/RamazSafin"
