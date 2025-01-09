@@ -1,39 +1,149 @@
+/* Основные стили */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    padding: 10px 0;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    background-color: #444;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  nav a:hover {
-    background-color: #666;
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  background-color: #F4F6F8; /* Светлый серый фон */
+  color: #2C3E50; /* Темный синий текст для контраста */
+  margin: 0;
+  padding: 0;
+}
+
+/* Шапка сайта */
+header {
+  background-color: #2C3E50; /* Тёмный синий фон для шапки */
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Кнопки слева */
+  gap: 20px;
+  padding-left: 20px; /* Немного отступа слева */
+}
+
+header nav li {
+  display: inline;
+}
+
+header nav a {
+  color: #FFFFFF; /* Белый текст на кнопках */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 25px; /* Увеличим padding для кнопок */
+  border-radius: 5px; /* Закруглим углы */
+  background-color: #34495E; /* Строгий серо-синий фон кнопок */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Эффект при наведении */
+header nav a:hover {
+  background-color: #1F2A36; /* Очень темный синий для кнопок при наведении */
+  transform: scale(1.05); /* Легкий эффект увеличения при наведении */
+}
+
+/* Контент страницы (слева) */
+main {
+  margin-top: 80px; /* Отступ, чтобы не перекрывалась шапка */
+  padding: 20px;
+  text-align: left; /* Текст слева */
+  max-width: 900px; /* Ограничиваем ширину контента */
+  margin-left: 20px; /* Отступ слева */
+}
+
+/* Стиль футера */
+footer {
+  background-color: #2C3E50; /* Тёмно-синий фон футера */
+  color: #BDC3C7; /* Светло-серый текст футера */
+  text-align: left;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Стили для кнопок семестров */
+.semester-btn {
+  background-color: #3498db;
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.semester-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Стили для списка дисциплин */
+.discipline-list {
+  list-style-type: none;
+  padding-left: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.discipline-list.open {
+  max-height: 500px;
+}
+
+/* Стили для семестров */
+.semester {
+  margin-bottom: 20px;
+}
+
+/* Стили для блока About Me */
+.about-me {
+  display: flex; /* Используем flexbox */
+  align-items: center; /* Выравнивание по центру по вертикали */
+  gap: 20px; /* Отступ между изображением и текстом */
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+  justify-content: flex-start; /* Обеспечиваем, что все начинается с левого края */
+}
+
+.about-me-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0; /* Запрещаем сжимать изображение */
+}
+
+.about-me-text {
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: justify;
+  flex-grow: 1; /* Даем тексту возможность заполнять оставшееся пространство */
+}
+
+.about-me-header {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Стили для картинки на всю ширину */
+.fullwidth-img {
+  width: 40%; /* Устанавливаем ширину картинки на 50% экрана */
+  height: auto;
+  position: absolute;
+  top: 0; /* Располагаем картинку вверху */
+  right: 0; /* Закрепляем картинку справа */
+  margin-top: 100px; /* Легкий отступ сверху */
+  margin-right: 140px;
+}
