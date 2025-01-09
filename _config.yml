@@ -2,7 +2,7 @@ title: "Моё портфолио"
 description: "Важность портфолио для программиста и мой опыт."
 baseurl: "" # Убедитесь, что пусто для GitHub Pages
 url: "https://ramazsafin.github.io/" # Укажите ваш GitHub Pages URL
-theme: jekyll-theme-cayman
+theme: "minimal-mistakes-jekyll"
 
 # Навигация (добавим ссылки на страницы)
 nav:
