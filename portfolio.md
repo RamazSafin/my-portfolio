@@ -124,3 +124,87 @@ title: "Портфолио"
     });
   });
 </script>
+
+<style>
+/* Основные стили */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F4F6F8;
+  color: #2C3E50;
+  margin: 0;
+  padding: 0;
+}
+
+/* Шапка сайта */
+header {
+  background-color: #2C3E50;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+header nav li {
+  display: inline;
+}
+
+header nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  background-color: #34495E;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header nav a:hover {
+  background-color: #1F2A36;
+  transform: scale(1.05);
+}
+
+/* Стили для блока "Обо мне" */
+.about-me {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.about-me-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-me-header {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.about-me-text {
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: justify;
+}
+
+</style>

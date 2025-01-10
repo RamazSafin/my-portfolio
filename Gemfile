@@ -15,3 +15,4 @@ gem "jekyll-titles-from-headings"
 
 # Ensure no version conflicts by keeping it simple and relying on GitHub Pages gem to manage Jekyll
 # gem "jekyll", "~> 3.9"  # Uncomment only if needed
+1
